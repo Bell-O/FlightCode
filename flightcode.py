@@ -41,9 +41,6 @@ def derive_key(password: str, salt: bytes, key_size: int = 32) -> bytes:
     )
 
 def encrypt_file(file_path: str, password: str):
-    """
-    Encrypt a file.
-    """
     try:
         with open(file_path, 'rb') as f:
             plaintext = f.read()
@@ -91,9 +88,6 @@ def decrypt_file(file_path: str, password: str):
         print(Fore.RED + f"[!] Error during decryption: {e}")
 
 def list_files():
-    """
-    Lists all files in the current directory.
-    """
     current_dir = os.getcwd()
     files = [f for f in os.listdir(current_dir) if os.path.isfile(os.path.join(current_dir, f))]
     
