@@ -56,7 +56,7 @@ def encrypt_file(file_path: str, password: str):
         encryptor = cipher.encryptor()
         ciphertext = encryptor.update(plaintext) + encryptor.finalize()
 
-        encrypted_path = file_path + '.enc'
+        encrypted_path = file_path + '.hee'
         with open(encrypted_path, 'wb') as f:
             f.write(salt + nonce + encryptor.tag + ciphertext)
 
