@@ -57,7 +57,7 @@ def decrypt_file(file_path: str, password: str):
         decryptor = cipher.decryptor()
         plaintext = decryptor.update(ciphertext) + decryptor.finalize()
 
-        original_file_path = file_path.replace('.enc', '')
+        original_file_path = file_path.replace('.hee', '')
         with open(original_file_path, 'wb') as f:
             f.write(plaintext)
 
