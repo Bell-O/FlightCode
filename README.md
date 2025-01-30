@@ -149,4 +149,4 @@ GitHub: [github.com/Bell-O](https://github.com/Bell-O)
 
 ## 📜 License
 
-This project is licensed under the [MIT License](https://github.com/Bell-O/FlightCode/blob/main/LICENSE).
+This project is licensed under the Bell Software License (BSL). See the LICENSE file for details.
